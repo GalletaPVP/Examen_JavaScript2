@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de JavaScript</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="barra">
+        <a href="ejerccio1.html">EJERCCIO 1</a>
+        <a href="ejerccio2.html">EJERCCIO 2</a>
+    </nav>
+    <div class="contenedor">
+        <h2>Practica sobre estructuras de control de Java Script</h2>
+        <div class="ejemplos">
+            <p>Cierta empresa proporciona un bono mensual a sus trabajadores, el cual puede ser por su antigüedad o bien por el monto de su sueldo, de la siguiente forma:
+                Cuando la antigüedad es mayor a 2 años,pero menor a 5, se otorga 20 % de su sueldo; cuando es de 5 años o más, 30 %. Ahora bien, el bono por concepto de sueldo, si éste es menor a S/.1000.00, se da 25 % de éste, cuando éste es mayor a S/.1000.00, pero menor o igual a S/.3500.00, se otorga 15% de su sueldo, para más de S/.3500.00. 10%. Realice el programa correspondiente para calcular los dos tipos de bono.</p>
+            <div class="calculadora">
+                <div class="cabecera">
+                    <h1>Calculo de Bono Mensual</h1>
+                </div>
+                <div class="cuerpo">
+                    <div class="campo">
+                        <label for="antiguedad">Antiguedad en años</label>
+                        <input type="text" id="antiguedad">
+                    </div>
+                    <div class="campo">
+                        <label for="sueldo_basico">Sueldo basico</label>
+                        <input type="text" id="sueldo_basico">
+                    </div>
+                    <div class="campo">
+                        <label for="bono_antiguedad">Bono por antiguedad XX%</label>
+                        <input type="text" id="bono_antiguedad" disabled>
+                    </div>
+                    <div class="campo">
+                        <label for="bono_sueldo">Bono por concepto de sueldo</label>
+                        <input type="text" id="bono_sueldo" disabled>
+                    </div>
+                    <div class="campo">
+                        <label for="neto_pagar">Neto a pagar</label>
+                        <input type="text" id="neto_pagar" disabled>
+                    </div>
+                </div>
+                <div class="footer">
+                    <button id="analizar">Calcular</button>
+                    <button id="borrar">Borrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/algoritmo2.js"></script>
+</body>
+</html>
